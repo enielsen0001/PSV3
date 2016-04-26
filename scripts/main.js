@@ -11,18 +11,16 @@ $(document).ready(function () {
     function animateMenu(){
     
     var navArray = ["#nav1","#nav2","#nav3","#nav4"];
-    var duration = 2000;
+    var duration = 1000;
 
    window.setInterval(function(){
     navArray.forEach(function(element){
  	
 	$( element ).delay(navArray.indexOf(element)*duration).animate({
-          color: "#36e300",
-          width: 500
+          color: "#36e300"
         }, 3000 );
 	$( element ).animate({
-          color: "#000",
-          width: 500
+          color: "#000"
         }, 3000 );
 
  		});
